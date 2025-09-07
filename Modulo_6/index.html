@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin-top: 50px;
+        }
+    
+        #lista-tarefas {
+          margin-top: 20px;
+          text-align: left;
+          display: inline-block;
+        }
+    
+        .concluida {
+          text-decoration: line-through;
+          color: gray;
+        }
+    
+        .nao-concluida {
+          font-weight: bold;
+          color: green;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Minha Lista de Tarefas</h1>
+    
+      <input type="text" id="nova-tarefa" placeholder="Digite uma tarefa">
+    
+      <button id="btn-adicionar">Adicionar</button>
+    
+      <div id="lista-tarefas"></div>
+    
+      <script src="index.js"></script>
+    </body>
+    </html>
