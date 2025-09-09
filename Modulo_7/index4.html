@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Twitter</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    #formulario {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      z-index: 1000;
+    }
+
+    textarea {
+      width: 70%;
+      height: 60px;
+      resize: none;
+    }
+
+    button {
+      padding: 8px 12px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    #feed {
+      margin-top: 100px;
+      padding: 20px;
+    }
+
+    .post {
+      background: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .post-header img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .post img.gato {
+      margin-top: 10px;
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .like-btn {
+      margin-top: 10px;
+      background: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div id="formulario">
+    <textarea id="texto-post" placeholder="O que está acontecendo?"></textarea>
+    <button id="btn-postar">Postar</button>
+  </div>
+
+  <div id="feed"></div>
+
+  <script src="index4.js"></script>
+</body>
+</html>
