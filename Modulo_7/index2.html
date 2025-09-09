@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca de Usuários no GitHub</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 30px;
+    }
+
+    #resultados {
+      margin-top: 20px;
+      text-align: left;
+      display: inline-block;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    .erro {
+      color: crimson;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Busca de Usuários no GitHub</h1>
+
+  <input type="text" id="campo-busca" placeholder="Digite um nome de usuário">
+
+  <button id="btn-buscar">Buscar</button>
+
+  <div id="resultados"></div>
+
+  <script src="index2.js"></script>
+</body>
+</html>
